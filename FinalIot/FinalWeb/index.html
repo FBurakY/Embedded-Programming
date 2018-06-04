@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="still.css" />
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+        document.getElementById("1sol").onmousedown = function() {
+          $.get("http://192.168.43.178/?1sol");
+        };
+        document.getElementById("1sol").onmouseup = function() {
+          for(var i = 0; i<100; i++)
+            $.get("http://192.168.43.178/?1dur");
+         window.location.reload(false);
+        };
+
+        document.getElementById("1sag").onmousedown = function() {
+          $.get("http://192.168.43.178/?1sag");
+        };
+        document.getElementById("1sag").onmouseup = function() {
+          for(var i = 0; i<100; i++)
+            $.get("http://192.168.43.178/?1dur");
+         window.location.reload(false);
+        };
+
+        document.getElementById("2sol").onmousedown = function() {
+          $.get("http://192.168.43.178/?2sol");
+        };
+        document.getElementById("2sol").onmouseup = function() {
+          for(var i = 0; i<100; i++)
+            $.get("http://192.168.43.178/?2dur");
+          window.location.reload(false);
+        };
+
+        document.getElementById("2sag").onmousedown = function() {
+          $.get("http://192.168.43.178/?2sag");
+        };
+        document.getElementById("2sag").onmouseup = function() {
+          for(var i = 0; i<100; i++)
+            $.get("http://192.168.43.178/?2dur");
+          window.location.reload(false);
+        };
+
+        document.getElementById("3sol").onmousedown = function() {
+          $.get("http://192.168.43.178/?3sol");
+        };
+        document.getElementById("3sol").onmouseup = function() {
+          for(var i = 0; i<100; i++)
+            $.get("http://192.168.43.178/?3dur");
+          window.location.reload(false);
+        };
+
+        document.getElementById("3sag").onmousedown = function() {
+          $.get("http://192.168.43.178/?3sag");
+        };
+        document.getElementById("3sag").onmouseup = function() {
+          for(var i = 0; i<100; i++)
+            $.get("http://192.168.43.178/?3dur");
+          window.location.reload(false);
+		  };       
+
+		});
+	</script>
+
+
+</head>
+
+<body>
+
+
+
+	<table class="table" >
+
+  <tr>
+    <td >X-Ekseni</td>
+    <td><button id = "1sol" class="button" >SOL</button></td>
+    <td><button id = "1sag" class="button" >SAĞ</button></td>
+
+  </tr>
+  <tr>
+    <td>Y-Ekseni</td>
+    <td><button id="2sol" class="button">YUKARI</button></td>
+    <td><button id="2sag" class="button">AŞAĞI</button></td>
+
+  </tr>
+  <tr>
+    <td>Z-Ekseni</td>
+    <td><button id="3sol" class="button" >İLERİ</button></td>
+    <td><button id="3sag" class="button">GERİ</button></td>
+  </tr>
+   
+</table>
+</body>
+</html>
+
+
